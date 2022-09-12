@@ -1,3 +1,287 @@
-h1{
-    color: red
+body{
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(#7012a6, #119619);
+  font-family: 'Roboto', sans-serif;
+  color: #ecebed;
+}
+
+body h1{
+  text-align: center;
+}
+
+@keyframes change-color {
+  from {
+    color: white;
+  }
+
+  to {
+    color: red;
+  }
+}
+
+.summary{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:15px;
+  margin: 1vh 4vw;
+}
+
+.head-img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.head-img h2{
+  margin-bottom: 2px;
+}
+
+.head-img img{
+  width: 100%;
+  min-width: 30vw;
+  margin: 5px;
+  height:auto;
+  align-items: center;
+  justify-self: center;
+  box-shadow: #ecebed;
+  border-radius: 8px;
+}
+
+.bio{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 2vw;
+}
+
+.skills-imgs{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 25px;
+  animation: 1.3s change-color infinite alternate;
+}
+
+.skills-imgs i{
+  font-size: 150%;
+  text-align: center;
+}
+
+.skills h4{
+  text-align: center;
+  margin-bottom:12px;
+}
+
+@media (max-width: 415px) {
+  .summary {
+    flex-direction: column;
+    margin: auto 5%;
+  }
+
+  .bio{
+    font-size: 5vw;
+  }
+
+  .skills-imgs{
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 0px;
+  }
+
+  .projects-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  .summary {
+    margin: 5px 10px;
+    gap: 5px;
+  }
+
+  .bio{
+    font-size: 3vw;
+  }
+
+  .bio h2{
+    margin-bottom: 0;
+  }
+
+  .skills-imgs i{
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.projects{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 50px;
+  gap: 20px;
+}
+
+.projects-container{
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  gap: 15px;
+}
+
+.proj-square{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 2px solid #7012a6;
+  border-radius: 8px;
+  justify-content: space-between;
+}
+
+.proj-img{
+  padding: 30px;
+  min-height: 40px;
+  min-width: 25vw;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.proj-img.one{
+  background-image: url('./assets/circle-multiple-outline.svg');
+}
+
+.proj-img.two{
+  background-image: url('./assets/rock-paper-scissors.svg');
+}
+
+.proj-img.three{
+  background-image: url('./assets/account-group.svg');
+}
+
+.proj-img.four{
+  background-image: url('./assets/monitor-dashboard.svg');
+}
+
+.proj-details{
+  background-color: #7012a6;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.proj-name{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.proj-name i{
+  font-size: 20px;
+}
+.proj-name a{
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 415px) {
+  .projects-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  .proj-name{
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+}
+
+.bottom{
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1.5fr;
+  padding: 10px;
+  margin: 1vh 4vw;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 7px;
+}
+
+.bottom-img{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.bottom-img img{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.contact-icons{
+  display: flex;
+  align-self: flex-start;
+  gap: 15px;
+  font-size: 25px;
+}
+
+.contact-icons a{
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.contact img{
+  width:5%;
+  height: auto;
+}
+
+.contact-info{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+@media (max-width: 415px) {
+  .bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-icons{
+    align-self: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .bottom{
+    margin: 5px 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bottom-img{
+    justify-self: bottom;
+    align-self: center;
+  }
+
+  .contact{
+    justify-content: space-around;
+    gap: 0px;
+    font-size: 80%;
+  }
 }
