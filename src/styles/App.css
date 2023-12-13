@@ -9,8 +9,15 @@
   width: 100%;
 }
 
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .description{
-  text-align: left;
+  text-align: center;
+  width: 70%;
 }
 
 .logo {
@@ -48,4 +55,10 @@
 
 .read-the-docs {
   color: #888;
+}
+
+@media (max-width: 980px) {
+  .card{
+    padding: 0;
+  }
 }

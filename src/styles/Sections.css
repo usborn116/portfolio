@@ -1,0 +1,12 @@
+.entry, .section{
+    text-align: left;
+}
+
+.section{
+    padding: 2em;
+}
+
+.list-item{
+    padding-top: 3px;
+    padding-left: 1em;
+}
