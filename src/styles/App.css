@@ -18,6 +18,11 @@
   align-items: center;
 }
 
+.avatar{
+  height: 200px;
+  border-radius: 30px;
+}
+
 .row a .list-logo{
   height: 15px;
 }
