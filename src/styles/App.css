@@ -18,6 +18,10 @@
   align-items: center;
 }
 
+.row a .list-logo{
+  height: 15px;
+}
+
 .description{
   text-align: center;
   width: 70%;
@@ -33,6 +37,15 @@
 
 .logo:hover {
   filter: drop-shadow(0 0 1em #A0E8AF);
+}
+
+.logos-row{
+  display: flex;
+  gap: 1em;
+}
+
+.list-logo{
+  height: 25px;
 }
 
 /*
