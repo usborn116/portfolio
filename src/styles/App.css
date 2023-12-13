@@ -7,6 +7,9 @@
 
 .page{
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header{
@@ -29,7 +32,7 @@
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 1em #A0E8AF);
 }
 
 /*
@@ -50,16 +53,33 @@
 */
 
 .card {
-  padding: 2em;
+  padding: 1em 1em 1em 1em;
 }
 
 .read-the-docs {
   color: #888;
 }
 
+.list-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5em;
+}
+
+.list-grid-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5em;
+}
+
 @media (max-width: 980px) {
   .card{
     padding: 0;
+  }
+
+  .list-grid, list-grid-2{
+    grid-template-columns: 1fr;
+    gap: 0.5em;
   }
 }
 

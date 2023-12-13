@@ -3,10 +3,16 @@
 }
 
 .section{
-    padding: 2em;
+    padding: 1em;
+    width: 75%;
 }
 
 .list-item{
-    padding-top: 3px;
+    padding-top: 0.5px;
     padding-left: 1em;
+    margin: 0;
+}
+
+.list-item p{
+    margin-top: 0.5px;
 }

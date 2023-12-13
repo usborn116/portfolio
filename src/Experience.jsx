@@ -2,9 +2,9 @@
 export const Experience = ({position, time, location, description}) => {
 
     return (
-        <div className="entry">
-            <h4>{position} | {time} | {location}</h4>
-            {description.map((d, i) => <p className='list-item' key={i}>{d}</p>)}
+        <div className="entry list-item">
+            <h3>{position} | {time} | {location}</h3>
+            {description.map((d, i) => <p key={i}>{d}</p>)}
         </div>
     )
 }
