@@ -5,14 +5,18 @@ import './styles/Sections.css'
 import { Experience } from './Experience'
 import { Skills } from './Skills'
 import { Project } from './Projects'
+import { Navbar } from './Navbar'
+import { Navmobile } from './Navmobile'
 
 function App() {
 
   return (
-    <div className='page'>
+    <div className='page' id='top'>
+      <Navbar />
+      <Navmobile />
       <Header />
       <div className="section">
-        <h1>Projects</h1>
+        <h1 id='projects'>Projects</h1>
         <div className='list-grid'>
           <Project name='Tally' link='https://github.com/usborn116/tally' lang={['Ruby', 'Rails', 'React' ]}
           description='This app lets you record scores for board game sessions and view your history of sessions for each game'/>
@@ -39,7 +43,7 @@ function App() {
         </div>
       </div>
       <div className="section">
-        <h1>Skills + Knowledge</h1>
+        <h1 id='skills'>Skills + Knowledge</h1>
         <div className='list-grid'>
           <Skills type='Coding' names={['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Python', 'Ruby', 'Ruby on Rails',
           'React', 'Vite', 'SQL', 'R', 'Command Line/Terminal', 'Git', 'Github', 'Browser DevTools', 'Visual Studio Code']}/>
@@ -50,7 +54,7 @@ function App() {
         </div>
       </div>
       <div className='section'>
-        <h1>Experience</h1>
+        <h1 id='experience'>Experience</h1>
         <h2>Planning Center</h2>
           <Experience position='Product Specialist' time='Aug 2023 - Present' location='Carlsbad, CA (Remote)'
           description={['Used technical knowledge of products to troubleshoot bugs, train other agents on new product features, process feature requests, and optimize product use for specific customer situations', 
@@ -76,7 +80,7 @@ function App() {
           'Assisted on a search committee reviewing 50+ applications and hiring 3 executive assistants']}/>
       </div>
       <div className='section'>
-        <h1>Education</h1>
+        <h1 id="education">Education</h1>
         <Education school='Learnquest' years='May 2023' degree='Scrum Master Certification'/>
         <Education school='Coursera' years='December 2022' degree='Google Data Analytics Certificate'/>
         <Education school='The Odin Project' years='November 2022' degree='HTML, CSS, Javascript, Ruby, Ruby On Rails Tracks'/>
