@@ -23,11 +23,11 @@ export const Navmobile = () => {
 
     return (
         <div className="nav-mobile">
-            <div><HashLink onClick={clickHandler} to="/#top"><img src={top}/></HashLink></div>
-            <div><HashLink onClick={clickHandler} to="/#projects"><img src={project}/></HashLink></div>
-            <div><HashLink onClick={clickHandler} to="/#skills"><img src={skill}/></HashLink></div>
-            <div><HashLink onClick={clickHandler} to="/#experience"><img src={work}/></HashLink></div>
-            <div><HashLink onClick={clickHandler} to="/#education"><img src={education}/></HashLink></div>
+            <div><HashLink onClick={clickHandler} smooth to="/#top"><img src={top}/></HashLink></div>
+            <div><HashLink onClick={clickHandler} smooth to="/#projects"><img src={project}/></HashLink></div>
+            <div><HashLink onClick={clickHandler} smooth to="/#skills"><img src={skill}/></HashLink></div>
+            <div><HashLink onClick={clickHandler} smooth to="/#experience"><img src={work}/></HashLink></div>
+            <div><HashLink onClick={clickHandler} smooth to="/#education"><img src={education}/></HashLink></div>
         </div>
     )
 }
