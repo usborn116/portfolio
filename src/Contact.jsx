@@ -9,15 +9,17 @@ export const Contact = () => {
         <div className="contact">
             <div className="email icon">
                 <img src={emailLogo} className="logo" alt="email logo" />
-                <div className="email">usborn116@gmail.com</div>
+                <div className="email"><a href="mailto:usborn116@gmail.com">usborn116@gmail.com</a></div>
             </div>
             <div className="phone icon">
             <img src={phoneLogo} className="logo" alt="phone logo" />
-            <div className="phone">503.798.7833</div>
+            <div className="phone"><a href="tel:503-798-7833">503.798.7833</a></div>
             </div>
             <div className="city icon">
                 <img src={locationLogo} className="logo" alt="location logo" />
-                <div className="city">Portland, OR</div>
+                <div className="city"><a href="https://maps.app.goo.gl/1QZB3RhB3Cy5pmgS8" target="_blank" rel="noreferrer">
+                    Portland, OR
+                </a></div>
             </div>
         </div>
     )
