@@ -26,6 +26,8 @@ function App() {
           description="A ruby gem that lets you interface with ESPN's undocumented Fantasy Basketball API"/>
           <Project name='ESPN NBA Trade Helper' link='https://github.com/usborn116/espn-nba-trade-helper' lang={['Python' ]}
           description="A small Python app that lets you analyze a trade between two fantasy teams in order to make informed decisions."/>
+          <Project name='Fantasy Trade Machine' link='https://github.com/usborn116/django_trade_app?tab=readme-ov-file' lang={['Python' ]}
+          description="The same type of app as above, but using the Django Framework!"/>
           <Project name='Portfolio' link='https://github.com/usborn116/portfolio' lang={['Javascript', 'React' ]}
           description="The repository for the portfolio site you're viewing!"/>
           <Project name='Workout Generator' link='https://github.com/usborn116/workout' lang={['Javascript', 'React' ]}
