@@ -18,6 +18,8 @@ function App() {
       <div className="section">
         <h1 id='projects'>Projects</h1>
         <div className='list-grid'>
+          <Project name='PTO Calculator' link='https://github.com/usborn116/pto-calculator' lang={['TypeScript']}
+          description='An app for my coworkers to see how possible vacation days impacts their vacation accrual!'/>
           <Project name='Tally' link='https://github.com/usborn116/tally' lang={['Ruby', 'Rails', 'React' ]}
           description='This app lets you record scores for board game sessions and view your history of sessions for each game'/>
           <Project name='Bread' link='https://github.com/usborn116/bread_app/tree/react-experiment' lang={['Ruby', 'Rails', 'React' ]} 

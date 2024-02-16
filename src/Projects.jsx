@@ -6,11 +6,12 @@ import pythonLogo from './assets/python.svg'
 import RLogo from './assets/R.svg'
 import JSLogo from './assets/js.svg'
 import exlink from './assets/exlink.svg'
+import TSLogo from './assets/TSLogo.svg'
 
 export const Project = ({name, link, lang, description}) => {
 
     const lang_key = {'Ruby' : rubyLogo, 'Rails': railsLogo, 'React': reactLogo,
-                    'Javascript': JSLogo, 'Python': pythonLogo, 'R': RLogo}
+                    'Javascript': JSLogo, 'Python': pythonLogo, 'R': RLogo, 'TypeScript' : TSLogo}
 
     return (
         <div className="entry">
