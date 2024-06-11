@@ -9,7 +9,7 @@ export const Contact = () => {
         <div className="contact">
             <div className="email icon">
                 <img src={emailLogo} className="logo" alt="email logo" />
-                <div className="email"><a href="mailto:usborn116@gmail.com">usborn116@gmail.com</a></div>
+                <div className="email"><a href="mailto:usborn116@gmail.com">usbornocampo@proton.me</a></div>
             </div>
             <div className="phone icon">
             <img src={phoneLogo} className="logo" alt="phone logo" />
