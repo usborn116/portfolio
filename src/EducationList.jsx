@@ -6,6 +6,7 @@ export const EducationList = () => {
     return (
       <div className='section'>
         <h1 id="education">Education</h1>
+        <Education school='Codecademy' years='June 2024' degree='Computer Science Career Path' />
         <Education school='Codecademy' years='June 2024' degree='Javascript Technical Interview Skill Path' />
         <Education school='Codecademy' years='May 2024' degree='Full-Stack Engineer Career Path' />
         <Education school='Codecademy' years='May 2024' degree='Analyze Data with SQL Skill Path' />
