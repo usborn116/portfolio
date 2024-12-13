@@ -7,8 +7,12 @@ export const ExperienceList = () => {
       <div className='section'>
         <h1 id='experience'>Experience</h1>
         <h2>Planning Center</h2>
-          <Experience position='Product Specialist' time='Aug 2023 - Present' location='Carlsbad, CA (Remote)'
-          description={['Used technical knowledge of products to troubleshoot bugs, train other agents on new product features, process feature requests, and optimize product use for specific customer situations', 
+          <Experience position='Full Stack Developer' time='Oct 2024 - Present' location='Carlsbad, CA (Remote)'
+          description={['Write and maintain code in a codebase using a Ruby on Rails backend and a (mostly) React.js frontend',
+          'Collaborate with other developers, product managers, and designers to create new features and improve existing ones',]}
+          />
+          <Experience position='Product Specialist' time='Aug 2023 - Oct 2024' location='Carlsbad, CA (Remote)'
+          description={['Used technical knowledge of products to troubleshoot bugs, train other agents on new product features, process feature requests, and optimize product use for specific customer situations',
           'Coordinated tasks involving developers, documentarians, and product managers and cultivated harmony across multiple teams throughout project progress']}
           />
           <Experience position='Product Documentarian' time='Dec 2021 - Aug 2023' location='Carlsbad, CA (Remote)'
